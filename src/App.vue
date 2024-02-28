@@ -1,16 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <main>
+  <MoviesList />
+  </main>
 </template>
 
 <script>
+import MoviesList from './components/MoviesList.vue'
 
 export default {
   name: 'App',
   components: {
+    MoviesList
   }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
