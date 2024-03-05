@@ -1,8 +1,16 @@
 <template>
-    <div>
+    <div v-if="toegang">
         <h2>Films overzicht</h2>
+        <ul>
+            <li>Film 1</li>
+            <li>Film 2</li>
+            <li>Film 3</li>
+            <li>Film 4</li>
+            <li>Film 5</li>    
+        </ul>
     </div>
-    <div>
+    <div v-else>
+        <h2>Login</h2>
         <form id="loginForm">
             <div class="form-group">
                 <div class="form-group">
