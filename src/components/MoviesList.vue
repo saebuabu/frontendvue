@@ -2,11 +2,12 @@
     <div v-if="toegang">
         <h2>Films overzicht</h2>
         <ul>
-            <li>Film 1</li>
-            <li>Film 2</li>
-            <li>Film 3</li>
-            <li>Film 4</li>
-            <li>Film 5</li>    
+            <li v-for="movie in moviesList" :key="movie.id">
+                <h3>{{ movie.titel }}</h3>
+                <p>{{ movie.regisseur }}</p>
+                <p>{{ movie.genre }}</p>
+                <p>{{ movie.samenvatting }}</p>
+            </li>
         </ul>
     </div>
     <div v-else>
@@ -28,6 +29,8 @@
 </template>
 
 <script>
+import movies from '@/assets/data/movies';
+
 export default {
     name: 'MoviesList',
     data() {
@@ -38,7 +41,8 @@ export default {
                 'email': 'abcd',
                 'password': '1234'
             },
-            toegang: false
+            toegang: true,
+            moviesList: movies
         }
     },
     methods: {
