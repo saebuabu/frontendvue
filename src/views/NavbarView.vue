@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link sr-only" to="/">Home</router-link>
+            <router-link class="nav-link sr-only" to="/" exact>Home</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">Over ons</router-link>
@@ -37,4 +37,11 @@
   border-radius: 50%;
   margin: 0.5rem;
 }
+
+nav li:hover,
+ nav li .router-link-active,
+ nav li .router-link-exact-active {
+   background-color: #f8aeda;
+   cursor: pointer;
+ }
 </style>
