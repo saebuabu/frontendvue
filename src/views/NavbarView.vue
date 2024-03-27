@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"
         ><img src="https://picsum.photos/seed/picsum/75/75" alt="Random Logo" />
@@ -26,6 +26,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/films">De films</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -33,6 +36,10 @@
 </template>
 
 <style>
+nav {
+ background-color: blueviolet;
+}
+
 .navbar-brand img {
   border-radius: 50%;
   margin: 0.5rem;
