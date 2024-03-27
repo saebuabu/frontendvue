@@ -2,6 +2,7 @@ const movies = [
     {
         "titel": "Nomadland",
         "regisseur": "Chloé Zhao",
+        "poster":"https://i.ebayimg.com/images/g/W60AAOSwEudgiJF0/s-l1600.jpg",
         "acteurs": ["Frances McDormand", "David Strathairn", "Linda May"],
         "genre": "Drama",
         "samenvatting": "Nomadland volgt het verhaal van een vrouw die, nadat de economie van een bedrijfsstad in Nevada instort, als moderne nomade door het Amerikaanse Westen reist."

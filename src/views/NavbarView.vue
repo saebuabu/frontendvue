@@ -44,4 +44,11 @@ nav {
   border-radius: 50%;
   margin: 0.5rem;
 }
+
+nav li:hover,
+ nav li .router-link-active,
+ nav li .router-link-exact-active {
+   background-color: #f8aeda;
+   cursor: pointer;
+ }
 </style>
