@@ -1,16 +1,19 @@
 <template>
   <div v-if="toegang">
-    <h2>Films overzicht</h2>
-    <div class="container-fluid">
-      <div v-for="movie in moviesList" :key="movie.id" class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-10">
+          <h1>Films overzicht</h1>
+        </div>
+      </div>
+      <div v-for="movie in moviesList" :key="movie.id" class="row justify-content-start">
         <div class="col col-12 col-md-4">
           <MovieCard :movie="movie" />
         </div>
-        <div class="col col-12 col-md-6">
+        <div class="p-3 col col-12 col-md-6">
           <p><span>{{ movie.regisseur }}</span> - <em>
           {{ movie.genre }}</em></p>
           <p>{{ movie.samenvatting }}</p></div>
-        <div class="col col-12 col-md-2">===</div>
       </div>
     </div>
   </div>
@@ -76,6 +79,14 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #f8aeda;
+  background-image: url('https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #loginForm {
   align-items: center;
   margin-top: 50px;
@@ -95,5 +106,9 @@ export default {
 /* col styling with border and a background color */
 .col {
   background-color: #f8aeda;
+}
+
+.col p, .col h1 {
+  text-align: start;
 }
 </style>

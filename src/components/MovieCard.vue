@@ -1,9 +1,9 @@
 <template>
     <div class="card">
-        <img :src="movie.poster" class="card-img-top" alt="Movie Poster">
         <div class="card-body">
             <h5 class="card-title">{{ movie.titel }}</h5>
         </div>
+        <img :src="movie.poster" class="card-img-bottom" alt="Movie Poster">
     </div>
 </template>
 
