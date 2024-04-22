@@ -18,16 +18,20 @@ export default {
     data() {
         return {
             location: {
-                name: "Location Name",
+                naam: "Vestiging 1",
                 photoUrl: "https://example.com/location-photo.jpg",
-                latitude: 123.456,
-                longitude: 789.012
-            }
+                latitude: 5512309,
+                longitude: 763636
+            },
+            id: null
         };
     },
     methods: {
         getGoogleMapsUrl(latitude, longitude) {
             return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d${latitude}!2d${longitude}`;
+        },
+        SetIdFromUrl() {    
+            this.id = this.$route.params.id;
         }
     }
 };
