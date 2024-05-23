@@ -82,13 +82,6 @@ export default {
     height: 50%;
 }
 
-.slider-container h1 {
-    position: absolute;
-    top: 10px;
-    left: 38%;
-    color: white;
-}
-
 .slider-image {
     width: 100%;
     height: 100%;
