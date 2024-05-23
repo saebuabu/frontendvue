@@ -1,6 +1,6 @@
 <template>
   <main class="home">
-    <ImageSlider title="Start pagina"/>
+    <ImageSlider title="Home"/>
   </main>
 </template>
 
