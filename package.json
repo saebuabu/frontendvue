@@ -12,6 +12,7 @@
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "popper": "^1.0.1",
+    "selenium-webdriver": "^4.23.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
