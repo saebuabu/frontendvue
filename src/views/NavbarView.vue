@@ -29,6 +29,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/films">De films</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/products">Productenlijst</router-link>
+          </li>
         </ul>
       </div>
     </div>
