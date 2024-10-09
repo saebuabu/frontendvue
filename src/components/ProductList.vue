@@ -38,4 +38,9 @@ export default {
 .card {
     margin: 1rem;
 }
+
+.card img {
+    height: 100px;
+    object-fit: cover;
+}
 </style>
