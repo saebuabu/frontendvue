@@ -7,11 +7,11 @@
       <label for="email">Email:</label>
       <input type="email" id="email" v-model="email" required>
       <label for="message">Bericht:</label>
-      <textarea id="message" v-model="message" required></textarea>
-      <button @click="submitForm" >Verstuur</button>
+      <textarea  id="bericht" v-model="message" required></textarea>
+      <button id="submit" @click="submitForm">Verstuur</button>
     </form>
     <div>
-      <p>{{ getMsg }}</p>
+      <p id="message">{{ getMsg }}</p>
     </div>
   </main>
 </template>
@@ -38,7 +38,10 @@ export default {
       // check fields
       if (this.name === '' || this.email === '' || this.message === '') {
         this.msg = 'Vul alle velden in';
-      } else {
+      } else if (!this.email.includes('@')) {
+        this.msg = 'Vul een geldig email adres in';
+      }
+      else {
         this.msg = 'Formulier is verstuurd en we reageren zo snel mogelijk';
         // clear fields
         this.name = '';
